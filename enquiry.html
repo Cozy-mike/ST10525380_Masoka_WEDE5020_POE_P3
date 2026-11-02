@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: title, description, keywords, robots, canonical ===== -->
+    <title>Enquire: Adopt, Volunteer or Sponsor | Paws &amp; Care Shelter</title>
+    <meta name="description" content="Enquire about adopting a dog or cat, volunteering or sponsoring an animal at Paws &amp; Care in Pretoria. Get costs and availability straight away.">
+    <meta name="keywords" content="adoption enquiry, volunteer at animal shelter Pretoria, sponsor a shelter animal, animal shelter volunteering South Africa, adoption fees, sponsor a rescue dog">
+    <meta name="author" content="Paws &amp; Care Animal Shelter">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#F2994A">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://paws-and-care.example/enquiry.html">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- ===== Social sharing (Open Graph + Twitter cards) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws &amp; Care Animal Shelter">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Enquire: Adopt, Volunteer or Sponsor | Paws &amp; Care Shelter">
+    <meta property="og:description" content="Enquire about adopting a dog or cat, volunteering or sponsoring an animal at Paws &amp; Care in Pretoria. Get costs and availability straight away.">
+    <meta property="og:url" content="https://paws-and-care.example/enquiry.html">
+    <meta property="og:image" content="https://paws-and-care.example/images/og-paws-and-care.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Two golden retriever puppies with the words Paws &amp; Care Animal Shelter, Pretoria">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Enquire: Adopt, Volunteer or Sponsor | Paws &amp; Care Shelter">
+    <meta name="twitter:description" content="Enquire about adopting a dog or cat, volunteering or sponsoring an animal at Paws &amp; Care in Pretoria. Get costs and availability straight away.">
+    <meta name="twitter:image" content="https://paws-and-care.example/images/og-paws-and-care.jpg">
+
+    <!-- ===== Performance: connect early to the font host ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;family=Lato:wght@400;700&amp;display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://paws-and-care.example/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Enquire",
+      "item": "https://paws-and-care.example/enquiry.html"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+
+            <!-- LOGO -->
+            <a href="index.html" class="brand">Paws &amp; Care</a>
+
+            <!-- MOBILE MENU TOGGLE (CSS-only) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"
+                   aria-label="Open or close the navigation menu">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="enquiry.html" class="active" aria-current="page">Enquire</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-cta">
+                    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="section-flush-bottom">
+            <div class="container">
+                <div class="section-head left">
+                    <span class="eyebrow">Make an enquiry</span>
+                    <h1>Adopt, volunteer or sponsor an animal</h1>
+                    <p>
+                        Choose what you are interested in, tell us a little about yourself and we
+                        will show you the costs and availability straight away. Just want to say
+                        hello? Use the <a href="contact.html">contact page</a> instead.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="enquiry-layout">
+
+                    <div id="enquiry-card" class="form-card">
+                        <form id="enquiry-form" action="enquiry.html" method="post" novalidate>
+
+                            <div class="form-alert" role="alert" tabindex="-1" hidden></div>
+                            <div class="form-alert" id="enquiry-error" role="alert" tabindex="-1" hidden></div>
+
+                            <input type="hidden" name="enquiryType" id="enquiry-type" value="adopt">
+
+                            <!-- TABS: choose the type of enquiry -->
+                            <div data-tabs id="enquiry-tabs">
+                                <div class="tablist" role="tablist" aria-label="Type of enquiry">
+                                    <button type="button" class="tab" role="tab" id="tab-adopt" data-tab="adopt"
+                                            aria-controls="panel-adopt" aria-selected="true">Adopt</button>
+                                    <button type="button" class="tab" role="tab" id="tab-volunteer" data-tab="volunteer"
+                                            aria-controls="panel-volunteer" aria-selected="false" tabindex="-1">Volunteer</button>
+                                    <button type="button" class="tab" role="tab" id="tab-sponsor" data-tab="sponsor"
+                                            aria-controls="panel-sponsor" aria-selected="false" tabindex="-1">Sponsor</button>
+                                </div>
+
+                                <!-- ADOPT -->
+                                <div role="tabpanel" id="panel-adopt" aria-labelledby="tab-adopt">
+                                    <fieldset data-type-fields="adopt">
+                                        <legend class="fieldset-legend">About the adoption</legend>
+                            <div class="field">
+                                <label for="adopt-animal">Animal you are interested in</label>
+                                <select id="adopt-animal" name="animal" required><option value="">Choose an animal&hellip;</option></select>
+                            </div>
+                                        <div class="field-row">
+                            <div class="field">
+                                <label for="adopt-home">Your home</label>
+                                <select id="adopt-home" name="home" required><option value="">Choose&hellip;</option><option value="house_garden">House with a garden</option><option value="house_no_garden">House without a garden</option><option value="flat">Flat or apartment</option><option value="farm">Farm or smallholding</option></select>
+                            </div>
+                            <div class="field">
+                                <label for="adopt-pets">Other pets at home</label>
+                                <select id="adopt-pets" name="pets" required><option value="">Choose&hellip;</option><option value="none">None</option><option value="dogs">Dog(s)</option><option value="cats">Cat(s)</option><option value="dogs_and_cats">Dogs and cats</option></select>
+                            </div>
+                                        </div>
+                            <div class="field">
+                                <label for="adopt-date">Preferred visit date</label>
+                                <input type="date" id="adopt-date" name="visitDate" required data-min-days="1" data-max-days="60" data-rule="closed-monday">
+                                <p class="form-note">We are open Tuesday to Sunday, 9:00 to 16:00 (closed Mondays).</p>
+                            </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- VOLUNTEER -->
+                                <div role="tabpanel" id="panel-volunteer" aria-labelledby="tab-volunteer" hidden>
+                                    <fieldset data-type-fields="volunteer" disabled>
+                                        <legend class="fieldset-legend">About your availability</legend>
+                                        <fieldset class="field" data-group-required data-msg="Choose at least one day you could volunteer.">
+                                            <legend>Days you could help</legend>
+                                            <div class="choice-row">
+                                    <span class="choice"><input type="checkbox" id="day-tuesday" name="days" value="tuesday"><label for="day-tuesday">Tuesday</label></span>
+                                    <span class="choice"><input type="checkbox" id="day-wednesday" name="days" value="wednesday"><label for="day-wednesday">Wednesday</label></span>
+                                    <span class="choice"><input type="checkbox" id="day-thursday" name="days" value="thursday"><label for="day-thursday">Thursday</label></span>
+                                    <span class="choice"><input type="checkbox" id="day-friday" name="days" value="friday"><label for="day-friday">Friday</label></span>
+                                    <span class="choice"><input type="checkbox" id="day-saturday" name="days" value="saturday"><label for="day-saturday">Saturday</label></span>
+                                    <span class="choice"><input type="checkbox" id="day-sunday" name="days" value="sunday"><label for="day-sunday">Sunday</label></span>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="field">
+                                            <legend>Shift</legend>
+                                            <div class="choice-row">
+                                                <span class="choice"><input type="radio" id="shift-morning" name="shift" value="morning" required><label for="shift-morning">Morning (9:00&ndash;12:30)</label></span>
+                                                <span class="choice"><input type="radio" id="shift-afternoon" name="shift" value="afternoon"><label for="shift-afternoon">Afternoon (12:30&ndash;16:00)</label></span>
+                                                <span class="choice"><input type="radio" id="shift-either" name="shift" value="either"><label for="shift-either">Either</label></span>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="field">
+                                            <legend>What would you like to help with? (optional)</legend>
+                                            <div class="choice-row">
+                                    <span class="choice"><input type="checkbox" id="int-dog_walking" name="interests" value="dog_walking"><label for="int-dog_walking">Dog walking</label></span>
+                                    <span class="choice"><input type="checkbox" id="int-cat_socialising" name="interests" value="cat_socialising"><label for="int-cat_socialising">Cat socialising</label></span>
+                                    <span class="choice"><input type="checkbox" id="int-cleaning" name="interests" value="cleaning"><label for="int-cleaning">Kennel cleaning</label></span>
+                                    <span class="choice"><input type="checkbox" id="int-events" name="interests" value="events"><label for="int-events">Adoption events</label></span>
+                                    <span class="choice"><input type="checkbox" id="int-admin" name="interests" value="admin"><label for="int-admin">Admin &amp; social media</label></span>
+                                            </div>
+                                        </fieldset>
+                            <div class="field">
+                                <label for="vol-start">Earliest start date</label>
+                                <input type="date" id="vol-start" name="startDate" required data-min-days="1" data-max-days="90">
+                            </div>
+                                        <div class="field">
+                                            <span class="choice"><input type="checkbox" id="vol-adult" name="adultConfirm" value="yes" required data-rule="adult-only"><label for="vol-adult">I am 18 years or older</label></span>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!-- SPONSOR -->
+                                <div role="tabpanel" id="panel-sponsor" aria-labelledby="tab-sponsor" hidden>
+                                    <fieldset data-type-fields="sponsor" disabled>
+                                        <legend class="fieldset-legend">About your sponsorship</legend>
+                                        <div class="field-row">
+                            <div class="field">
+                                <label for="sponsor-type">Sponsoring as</label>
+                                <select id="sponsor-type" name="sponsorType" required><option value="">Choose&hellip;</option><option value="individual">An individual</option><option value="business">A business</option></select>
+                            </div>
+                            <div class="field">
+                                <label for="sponsor-tier">Sponsorship level</label>
+                                <select id="sponsor-tier" name="tier" required><option value="">Choose&hellip;</option></select>
+                            </div>
+                                        </div>
+                            <div class="field">
+                                <label for="sponsor-animal">Animal to sponsor (optional)</label>
+                                <select id="sponsor-animal" name="sponsorAnimal"><option value="">No preference</option></select>
+                            </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <!-- DETAILS EVERYONE FILLS IN -->
+                            <fieldset class="enquiry-common">
+                                <legend class="fieldset-legend">Your details</legend>
+                                <div class="field-row">
+                            <div class="field">
+                                <label for="e-name">Full name</label>
+                                <input type="text" id="e-name" name="fullName" required minlength="2" maxlength="60" autocomplete="name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\x27 .\-]{2,60}" data-pattern-msg="Use letters only (spaces, hyphens and apostrophes are fine).">
+                            </div>
+                            <div class="field">
+                                <label for="e-email">Email</label>
+                                <input type="email" id="e-email" name="email" required maxlength="100" autocomplete="email">
+                            </div>
+                                </div>
+                            <div class="field">
+                                <label for="e-phone">Phone (optional)</label>
+                                <input type="tel" id="e-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="012 345 6789" pattern="(\+27|0)[ \-]?[1-9]([ \-]?[0-9]){8}" data-pattern-msg="Enter a South African number, e.g. 012 345 6789 or +27 12 345 6789.">
+                            </div>
+                                <div class="field">
+                                    <label for="e-message">Anything else we should know?</label>
+                                    <textarea id="e-message" name="notes" rows="4" required minlength="10" maxlength="500"></textarea>
+                                    <small class="counter" data-counter-for="e-message"></small>
+                                </div>
+
+                                <!-- Honeypot: real visitors never see or fill this in -->
+                                <div class="hp-field" aria-hidden="true">
+                                    <label for="e-website">Leave this field empty</label>
+                                    <input type="text" id="e-website" name="website" tabindex="-1" autocomplete="off" data-honeypot>
+                                </div>
+
+                                <div class="field">
+                                    <span class="choice"><input type="checkbox" id="e-consent" name="consent" value="yes" required><label for="e-consent">I agree that Paws &amp; Care may contact me about this enquiry</label></span>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" class="btn btn-primary btn-submit">Send enquiry</button>
+                            <p class="form-note">
+                                This is a demonstration form: it is sent to a free public test service
+                                that stores nothing. Please use sample details.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- PROCESSED RESPONSE (filled by js/forms.js) -->
+                    <div id="enquiry-result" class="result-panel" role="status" aria-live="polite" hidden></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cta-band container">
+                <h2>Not sure which to choose?</h2>
+                <p>Browse the animals first, or send us a quick message and we will point you in the right direction.</p>
+                <div class="hero-actions hero-actions-center">
+                    <a href="adopt.html" class="btn btn-primary">Meet the animals</a>
+                <a href="contact.html" class="btn btn-secondary">Contact us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- BRAND -->
+                <div>
+                    <div class="footer-brand">Paws &amp; Care</div>
+                    <p class="footer-text">
+                        Every paw deserves a safe home. A registered non-profit
+                        animal shelter based in Pretoria, South Africa.
+                    </p>
+                </div>
+
+                <!-- EXPLORE -->
+                <nav aria-label="Footer navigation">
+                    <p class="footer-heading">Explore</p>
+                    <ul>
+                        <li><a href="adopt.html">Adopt a dog or cat</a></li>
+                        <li><a href="enquiry.html#volunteer">Volunteer</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CONTACT -->
+                <div>
+                    <p class="footer-heading">Contact</p>
+                    <ul>
+                        <li><a href="contact.html">Visit or call us</a></li>
+                        <li><a href="contact.html#message">Report a stray</a></li>
+                        <li><a href="enquiry.html">Make an enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div>
+                    <p class="footer-heading">Follow along</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <span>
+                    &copy; <span data-year>2026</span> Paws &amp; Care Animal Shelter.
+                    NPO, Pretoria, South Africa.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animals-data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</body>
+</html>
